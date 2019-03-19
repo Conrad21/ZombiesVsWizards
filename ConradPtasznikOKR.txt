@@ -1,1 +1,2 @@
-Implement the dice roll in the game.
+Implement the dice roll in the game. (3 Hours)
+Work on environment with nicole (10 Hours) 
