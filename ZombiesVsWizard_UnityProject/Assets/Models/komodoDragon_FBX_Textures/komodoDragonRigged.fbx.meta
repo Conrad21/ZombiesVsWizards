@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 85f232dd7685e56448b9bbfe44ce7077
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: backCtl.L
+    100002: backCtl.L_end
+    100004: backCtl.R
+    100006: backCtl.R_end
+    100008: backpaw.L
+    100010: backpaw.L_end
+    100012: backpaw.R
+    100014: backpaw.R_end
+    100016: botback.L
+    100018: botback.R
+    100020: botfleg.L
+    100022: botfleg.R
+    100024: frontControl.L
+    100026: frontControl.L_end
+    100028: frontControl.R
+    100030: frontControl.R_end
+    100032: fronthip
+    100034: frontpaw.L
+    100036: frontpaw.L_end
+    100038: frontpaw.R
+    100040: frontpaw.R_end
+    100042: head
+    100044: headCtl
+    100046: headCtl_end
+    100048: hip
+    100050: hipout.L
+    100052: hipout.R
+    100054: jaw
+    100056: jaw_end
+    100058: komodo_retop
+    100060: komodo_rig
+    100062: //RootNode
+    100064: midback.L
+    100066: midback.R
+    100068: middle
+    100070: neck.000
+    100072: neck.001
+    100074: should.L
+    100076: should.R
+    100078: tail.00
+    100080: tail.001
+    100082: tail.002
+    100084: tail.003
+    100086: tail.004
+    100088: tail.005
+    100090: tail.005_end
+    100092: tailCtl
+    100094: tailCtl_end
+    100096: topback.L
+    100098: topback.R
+    100100: topfleg.L
+    100102: topfleg.R
+    400000: backCtl.L
+    400002: backCtl.L_end
+    400004: backCtl.R
+    400006: backCtl.R_end
+    400008: backpaw.L
+    400010: backpaw.L_end
+    400012: backpaw.R
+    400014: backpaw.R_end
+    400016: botback.L
+    400018: botback.R
+    400020: botfleg.L
+    400022: botfleg.R
+    400024: frontControl.L
+    400026: frontControl.L_end
+    400028: frontControl.R
+    400030: frontControl.R_end
+    400032: fronthip
+    400034: frontpaw.L
+    400036: frontpaw.L_end
+    400038: frontpaw.R
+    400040: frontpaw.R_end
+    400042: head
+    400044: headCtl
+    400046: headCtl_end
+    400048: hip
+    400050: hipout.L
+    400052: hipout.R
+    400054: jaw
+    400056: jaw_end
+    400058: komodo_retop
+    400060: komodo_rig
+    400062: //RootNode
+    400064: midback.L
+    400066: midback.R
+    400068: middle
+    400070: neck.000
+    400072: neck.001
+    400074: should.L
+    400076: should.R
+    400078: tail.00
+    400080: tail.001
+    400082: tail.002
+    400084: tail.003
+    400086: tail.004
+    400088: tail.005
+    400090: tail.005_end
+    400092: tailCtl
+    400094: tailCtl_end
+    400096: topback.L
+    400098: topback.R
+    400100: topfleg.L
+    400102: topfleg.R
+    2100000: komodoDragon_material
+    4300000: komodo_retop
+    9500000: //RootNode
+    13700000: komodo_retop
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
