@@ -26,5 +26,11 @@ public class DiceScript : MonoBehaviour {
 			rb.AddForce (transform.up * 500);
 			rb.AddTorque (dirX, dirY, dirZ);
 		}
+    if (Input.GetKey(KeyCode.X))
+            {
+                gameObject.transform.position = new Vector3(119, 26, 226);
+								//gameObject.transform.rotation = new Vector3(19, 26, 25);
+            }
+	
 	}
 }
