@@ -16,6 +16,11 @@ public class Move : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     Transform t;
+
+    public AudioClip Dripmusic;
+    public AudioSource dripSource;
+    public int musicSounds = 1;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -50,5 +55,18 @@ public class Move : MonoBehaviour
 
         // Move the controller
         controller.Move(moveDirection * Time.deltaTime);
+
+        if (dripSource.isPlaying == false && musicSounds == 1)
+        {
+            dripSource.PlayOneShot(Dripmusic);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+            if (musicSounds == 1)
+            {
+                musicSounds = 0;
+                dripSource.Stop();
+            }
+            else { musicSounds = 1; }
     }
 }
