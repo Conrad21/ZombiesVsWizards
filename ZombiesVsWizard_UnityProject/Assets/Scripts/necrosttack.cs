@@ -20,7 +20,7 @@ public class necrosttack : MonoBehaviour
         for (int i = 0; i < 30; i++)
         {
             float x = Mathf.Sin(angle);
-            float y = Mathf.Cos(angle);
+            //float y = Mathf.Cos(angle);
             angle += 10 * Mathf.PI;
 
             Vector3 dir = new Vector3(transform.position.x + angle, transform.position.y, 0);
@@ -43,8 +43,10 @@ public class necrosttack : MonoBehaviour
                     ZombiesPresent = true;
                     if (PlayerPresent && ZombiesPresent)
                     {
-                        float step = -2f * Time.deltaTime; // calculate distance to move
-                                                           //hit.collider.gameObject.transform.position = Vector3.MoveTowards(hit.collider.gameObject.transform.position, transform.position, step);
+                        float step = -2f * Time.deltaTime; 
+                        // calculate distance to move
+                        //move towards doesnt trigger
+                        //hit.collider.gameObject.transform.position = Vector3.MoveTowards(hit.collider.gameObject.transform.position, transform.position, step);
                         transform.position = Vector3.MoveTowards(transform.position, hit.collider.gameObject.transform.position, step);
                     }
                 }
