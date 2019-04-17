@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AI_1 : MonoBehaviour
 {
-    public Rigidbody rb;
+    /*public Rigidbody rb;
 
     void Start()
     {
@@ -27,5 +27,12 @@ public class AI_1 : MonoBehaviour
                 //name is hit.collider.gameObject.name
             }
         }
-    }
+    }*/
+       public Transform goal;
+       
+       void Start () 
+       {
+          UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+          agent.destination = goal.position; 
+       }
 }

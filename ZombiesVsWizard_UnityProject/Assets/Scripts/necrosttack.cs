@@ -5,7 +5,7 @@ using UnityEngine;
 public class necrosttack : MonoBehaviour
 {
 
-    Rigidbody rb;
+    /* Rigidbody rb;
     bool PlayerPresent = false, ZombiesPresent = false;
     void Start()
     {
@@ -52,6 +52,6 @@ public class necrosttack : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
 }
 

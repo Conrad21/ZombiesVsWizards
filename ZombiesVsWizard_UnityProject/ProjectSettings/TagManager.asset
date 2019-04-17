@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - talkS
+  - waypoint
   layers:
   - Default
   - TransparentFX
