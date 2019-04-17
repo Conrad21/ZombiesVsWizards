@@ -24,12 +24,14 @@ public class player : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Tab))
+        {
             if (musicSounds == 1)
             {
                 musicSounds = 0;
                 dripSource.Stop();
             }
             else { musicSounds = 1; }
+        }
 
     }
 }
