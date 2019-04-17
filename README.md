@@ -10,3 +10,7 @@ floor torch - https://www.cgtrader.com/free-3d-models/architectural/lighting/tor
 wall torch - https://www.cgtrader.com/items/746616/download-page 
 
 intro image: https://www.wallpaperup.com/604822/WICCA_wiccan_witch_dark_occult_fantasy_religion_book_magic.html
+
+orb: https://www.cgtrader.com/items/708879/download-page
+
+paper: https://www.kisspng.com/png-scroll-paper-writer-scroll-702214/download-png.html
