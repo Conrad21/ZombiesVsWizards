@@ -5,15 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/73778051c044f7744a943f401014edf5
-    guid: 73778051c044f7744a943f401014edf5
-  - enabled: 1
-    path: Assets/Scenes/Wizards Vs Zombies.unity
-    guid: 70a655cc340494e99994b79fafa55d87
   - enabled: 1
     path: Assets/Scenes/Start Screen.unity
     guid: 6739a6bfb3f714c86b7f5105635c1e9b
+  - enabled: 1
+    path: Assets/Scenes/Wizards Vs Zombies.unity
+    guid: 70a655cc340494e99994b79fafa55d87
   - enabled: 1
     path: Assets/Scenes/End Screen.unity
     guid: 6cb2c7eab8300a047be41a7b787696eb
