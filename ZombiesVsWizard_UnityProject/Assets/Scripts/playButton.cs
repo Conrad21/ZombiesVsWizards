@@ -21,7 +21,7 @@ public class playButton : MonoBehaviour
 
 
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Wizards Vs Zombies");
        
     
     }

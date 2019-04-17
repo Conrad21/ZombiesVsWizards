@@ -21,6 +21,7 @@ public class Move : MonoBehaviour
     public AudioSource dripSource;
     public int musicSounds = 1;
 
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -28,6 +29,8 @@ public class Move : MonoBehaviour
         // let the gameObject fall down
         //gameObject.transform.position = new Vector3(14.57, 2.43, 13.47);
     }
+
+ 
 
     void Update()
     {
