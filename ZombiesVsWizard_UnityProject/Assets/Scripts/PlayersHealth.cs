@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayersHealth : MonoBehaviour
 {
@@ -42,5 +43,6 @@ public class PlayersHealth : MonoBehaviour
     void Die(){
         CurrentHealth = 0;
         Debug.Log("You have Dead!"); 
+        SceneManager.LoadScene( 2);
     }
 }
