@@ -15,3 +15,6 @@ orb: https://www.cgtrader.com/items/708879/download-page
 
 paper: https://www.kisspng.com/png-scroll-paper-writer-scroll-702214/download-png.html
 bubble: https://www.kisspng.com/png-speech-balloon-clip-art-speech-bubble-794804/download-png.html 
+
+win screen song: https://www.youtube.com/watch?v=OKZ_zwDqPhk
+win image: https://www.myjewishlearning.com/article/from-jewish-mysticism-to-magic/ 
