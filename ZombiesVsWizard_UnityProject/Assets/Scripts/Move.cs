@@ -21,6 +21,9 @@ public class Move : MonoBehaviour
     public AudioSource dripSource;
     public int musicSounds = 1;
 
+    public GameObject bullet;
+    public GameObject cannon;
+
 
     void Start()
     {
@@ -62,6 +65,12 @@ public class Move : MonoBehaviour
         if (dripSource.isPlaying == false && musicSounds == 1)
         {
             dripSource.PlayOneShot(Dripmusic);
+        }
+
+        if (Input.GetKeyDown(KeyCode.F)) {       
+            GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
+            newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 5;
+            newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1000);
         }
 
         if (Input.GetKeyDown(KeyCode.Tab))
