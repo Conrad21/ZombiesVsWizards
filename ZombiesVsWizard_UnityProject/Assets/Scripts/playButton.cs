@@ -8,9 +8,6 @@ public class playButton : MonoBehaviour
     public AudioClip Sound;
     public AudioSource Source;
 
-    public AudioClip Sound2;
-    public AudioSource Source2;
-
     public AudioClip WhooshSound;
     public AudioSource WhooshSource;
 
@@ -20,8 +17,7 @@ public class playButton : MonoBehaviour
     {
         player = 0;
         Source.Stop();
-        WhooshSource.PlayOneShot(WhooshSound);
-        //WhooshSource.PlayOneShot(Sound);
+            //WhooshSource.PlayOneShot(Sound);
 
 
 
@@ -36,13 +32,6 @@ public class playButton : MonoBehaviour
         if (Source.isPlaying == false && player == 1)
         {
             Source.PlayOneShot(Sound);
-            player = 2;
-        }
-
-        if (Source.isPlaying == false && player == 2)
-        {
-            Source2.PlayOneShot(Sound2);
-          
         }
 
         if (WhooshSource.isPlaying == false && player == 0)
