@@ -6,9 +6,6 @@ TagManager:
   tags:
   - talkS
   - waypoint
-  - Body
-  - Head
-  - fire
   layers:
   - Default
   - TransparentFX
