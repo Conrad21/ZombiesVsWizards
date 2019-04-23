@@ -2,16 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class PlayerHealth: MonoBehaviour
 {
     public int tacos; 
-    public float CurrentHealth {get; set; }
-    public float MaxHealth {get; set;}
+    public float CurrentHealth;
+    public float MaxHealth;
     public Slider healthbar; 
-    public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
-    public float flashSpeed = 5f;  
     bool isDead;                                             
     bool damaged;       
 
@@ -29,23 +26,11 @@ public class PlayerHealth: MonoBehaviour
     void Update()
     {
         if(Input.GetKey(KeyCode.P)){
-             TakeDamage(6);
+             TakeDamage(6.0f);
              CurrentHealth = (CurrentHealth - 6);
         }
-
-        //  if(damaged)
-        // {
-        //     // ... set the colour of the damageImage to the flash colour.
-        //     //damageImage.color = flashColour;
-        // }
-        // else
-        // {
-        //     // ... transition the colour back to clear.
-        //   //  damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
-        // }
-
-        // damaged = false;
     }
+
     public void TakeDamage(float damageValue){
         damaged = true;
         CurrentHealth = (CurrentHealth - damageValue); 
@@ -55,6 +40,8 @@ public class PlayerHealth: MonoBehaviour
         Die();
         }
     }
+
+
     float CalculateHealth(){
         return CurrentHealth/MaxHealth ; 
     }
@@ -63,6 +50,6 @@ public class PlayerHealth: MonoBehaviour
     void Die(){
         CurrentHealth = 0;
         Debug.Log("You have Dead!"); 
-        SceneManager.LoadScene( 2);
+
     }
 }

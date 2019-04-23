@@ -5,7 +5,7 @@ using System.Collections;
 public class EnemyAttack : MonoBehaviour
 {
     public float timeBetweenAttacks = 0.5f;     // The time in seconds between each attack.
-    public int attackDamage = 10;               // The amount of health taken away per attack.
+    public float attackDamage = 10.0f;               // The amount of health taken away per attack.
 
   
 
@@ -20,7 +20,7 @@ public class EnemyAttack : MonoBehaviour
     {
         // Setting up the references.
         //player = GameObject.FindWithTag("MyPlayer");
-         player = GameObject.FindWithTag("MyPlayer");
+        player = GameObject.FindWithTag("MyPlayer");
         playerHealth = player.GetComponent <PlayerHealth> ();
       //  enemyHealth = GetComponent<EnemyHealth>();
 
@@ -34,6 +34,7 @@ public class EnemyAttack : MonoBehaviour
         {
             // ... the player is in range.
             playerInRange = true;
+            Debug.Log("HAH");
         }
     }
 
