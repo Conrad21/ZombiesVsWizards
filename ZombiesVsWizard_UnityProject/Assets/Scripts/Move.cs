@@ -67,7 +67,7 @@ public class Move : MonoBehaviour
             dripSource.PlayOneShot(Dripmusic);
         }
 
-        if (Input.GetKeyDown(KeyCode.F)) {       
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {       
             GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
             newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 5;
             newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1000);

@@ -9,6 +9,7 @@ TagManager:
   - Body
   - Head
   - fire
+  - MyPlayer
   layers:
   - Default
   - TransparentFX
