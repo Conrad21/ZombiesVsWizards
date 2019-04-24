@@ -6,8 +6,10 @@ public class EnemyAttack : MonoBehaviour
 {
     public float timeBetweenAttacks = 0.5f;     // The time in seconds between each attack.
     public float attackDamage = 10.0f;               // The amount of health taken away per attack.
-
-  
+    public float CurrentHealth;
+    public float MaxHealth;
+    bool isDead;                                             
+    bool damaged;    
 
     public GameObject player ;                          // Reference to the player GameObject.
     PlayerHealth playerHealth;                  // Reference to the player's health.
@@ -20,12 +22,22 @@ public class EnemyAttack : MonoBehaviour
     {
         // Setting up the references.
         //player = GameObject.FindWithTag("MyPlayer");
+
+         MaxHealth = 20f; 
+        CurrentHealth = MaxHealth;
         player = GameObject.FindWithTag("MyPlayer");
         playerHealth = player.GetComponent <PlayerHealth> ();
       //  enemyHealth = GetComponent<EnemyHealth>();
 
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+       
+        Debug.Log("You hit him");
+        TakeDamage(6);
+        //Destroy(gameObject); 
+    }
 
     void OnTriggerEnter (Collider other)
     {
@@ -79,4 +91,20 @@ public class EnemyAttack : MonoBehaviour
             playerHealth.TakeDamage (attackDamage);
         }
     }
+
+public void TakeDamage(float damageValue){
+        damaged = true;
+        CurrentHealth = (CurrentHealth - damageValue); 
+        if(CurrentHealth <= 0){
+        Die();
+        }
+    }
+
+    void Die(){
+        CurrentHealth = 0;
+        Debug.Log("He Dead!"); 
+        Destroy(gameObject); 
+    }
+  
+
 }
