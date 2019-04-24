@@ -336,8 +336,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sound: {fileID: 8300000, guid: f60beaa0e751d42fd8c9c4206f18f579, type: 3}
   Source: {fileID: 623444973}
-  Sound2: {fileID: 0}
-  Source2: {fileID: 0}
   WhooshSound: {fileID: 8300000, guid: 3be0ff9cb419441e490a3a508f905c4b, type: 3}
   WhooshSource: {fileID: 1259948379}
 --- !u!1 &1259948378
@@ -819,7 +817,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 2c7f5a0d53630fa4bbb58947ac42322c, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8e8be79b4e438bc48bd1a8095446310c, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -848,8 +846,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sound: {fileID: 8300000, guid: 04ed5bbc12c98ed499fd87be7e38ed40, type: 3}
   Source: {fileID: 623444973}
-  Sound2: {fileID: 8300000, guid: 04ed5bbc12c98ed499fd87be7e38ed40, type: 3}
-  Source2: {fileID: 1324238680}
   WhooshSound: {fileID: 8300000, guid: 3be0ff9cb419441e490a3a508f905c4b, type: 3}
   WhooshSource: {fileID: 1259948379}
 --- !u!1 &1374151213

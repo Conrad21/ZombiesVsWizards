@@ -1,0 +1,2 @@
+Creator of this shader:
+https://remingtongraphics.net/tools/pbr-shader/
