@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class PlayerHealth: MonoBehaviour
 {
     public int tacos; 
@@ -17,7 +17,7 @@ public class PlayerHealth: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MaxHealth = 20f; 
+        MaxHealth = 100f; 
         CurrentHealth = MaxHealth;
         
     }
@@ -27,7 +27,7 @@ public class PlayerHealth: MonoBehaviour
     {
         if(Input.GetKey(KeyCode.P)){
              TakeDamage(6.0f);
-             CurrentHealth = (CurrentHealth - 6);
+            // CurrentHealth = (CurrentHealth);
         }
     }
 
@@ -50,6 +50,6 @@ public class PlayerHealth: MonoBehaviour
     void Die(){
         CurrentHealth = 0;
         Debug.Log("You have Dead!"); 
-
+        SceneManager.LoadScene("End Screen");
     }
 }
