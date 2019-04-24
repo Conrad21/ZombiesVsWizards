@@ -14,7 +14,7 @@ public class rayforward : MonoBehaviour
     void Update()
     {
         float distance;
-        Vector3 forward = transform.TransformDirection(Vector3.forward) * 15; //change 15 units to length of room for NPC2
+        Vector3 forward = transform.TransformDirection(Vector3.forward) * 150; //change 15 units to length of room for NPC2
         Debug.DrawRay(transform.position, forward, Color.cyan);
         if (Physics.Raycast(transform.position, forward, out RaycastHit hit))
         {
@@ -22,7 +22,7 @@ public class rayforward : MonoBehaviour
             {
                 distance = hit.distance;
                 print(hit.collider.gameObject.name); //wizard3?
-                float step = 1f * Time.deltaTime; // calculate distance to move
+                float step = 10f * Time.deltaTime; // calculate distance to move
                 transform.position = Vector3.MoveTowards(transform.position, hit.collider.gameObject.transform.position, step);
                 //name is hit.collider.gameObject.name
             }
