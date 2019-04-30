@@ -11,9 +11,9 @@ public class PlayerHealth: MonoBehaviour
     public Slider healthbar; 
     bool isDead;                                             
     bool damaged;       
-
-
-    
+    public Color flashColour = new Color(5f, 0f, 0f, 0.3f);
+    public float flashSpeed = 5f;  
+     public Image DamangedImage; 
     // Start is called before the first frame update
     void Start()
     {
@@ -29,13 +29,29 @@ public class PlayerHealth: MonoBehaviour
              TakeDamage(6.0f);
             // CurrentHealth = (CurrentHealth);
         }
+
+        if(damaged)
+        {
+            // ... set the colour of the damageImage to the flash colour.
+            DamangedImage.color = flashColour;
+        }
+        // Otherwise...
+        else
+        {
+            // ... transition the colour back to clear.
+            DamangedImage.color = Color.Lerp (DamangedImage.color, Color.clear, flashSpeed * Time.deltaTime);
+        }
+
+        // Reset the damaged flag.
+        damaged = false;
+
     }
 
     public void TakeDamage(float damageValue){
         damaged = true;
         CurrentHealth = (CurrentHealth - damageValue); 
         healthbar.value = CalculateHealth(); 
-        
+    
         if(CurrentHealth <= 0){
         Die();
         }
