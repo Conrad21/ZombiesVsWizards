@@ -18,10 +18,13 @@ public class EnemyAttackMaster : MonoBehaviour
     float timer;                                // Timer for counting up to the next attack.
 
     public GameObject myPrefab;
-    public GameObject Master;  
+    public GameObject Master;
+
     Vector3 temp = new Vector3(3.0f,0,0);
     Vector3 temp2 = new Vector3(-3.0f,0,0);
     Vector3 ah; 
+    public GameObject fireball;
+
     void Start ()
     {
         // Setting up the references.
@@ -30,6 +33,7 @@ public class EnemyAttackMaster : MonoBehaviour
          MaxHealth = 20f; 
         CurrentHealth = MaxHealth;
         player = GameObject.FindWithTag("MyPlayer");
+      //  fireball = GameObject.FindWithTag("fireball");
         playerHealth = player.GetComponent <PlayerHealth> ();
       //  enemyHealth = GetComponent<EnemyHealth>();
 
@@ -43,23 +47,36 @@ public class EnemyAttackMaster : MonoBehaviour
     //     //Destroy(gameObject); 
     // }
 
+
+
   private void OnCollisionEnter(Collision collision)
     {
        
-        Debug.Log("You hit him");
+       // Debug.Log("You hit him");
        // TakeDamage(6);
         //Destroy(gameObject); 
     }
     
     void OnTriggerEnter (Collider other)
     {
+         //TakeDamage(6);
         // If the entering collider is the player...
         if(other.gameObject == player)
         {
             // ... the player is in range.
             playerInRange = true;
-             TakeDamage(6);
+         
             Debug.Log("HAH");
+           //  TakeDamage(6);
+        }
+
+        if(other.gameObject == fireball)
+        {
+            // ... the player is in range.
+        
+          Debug.Log("You hit him");
+        TakeDamage(6);
+            
            //  TakeDamage(6);
         }
     }
@@ -78,6 +95,7 @@ public class EnemyAttackMaster : MonoBehaviour
 
     void Update ()
     {
+             fireball = GameObject.FindWithTag("fireball");
         // Add the time since Update was last called to the timer.
         timer += Time.deltaTime;
 

@@ -17,7 +17,7 @@ public class EnemyAttack : MonoBehaviour
     bool playerInRange;                         // Whether player is within the trigger collider and can be attacked.
     float timer;                                // Timer for counting up to the next attack.
 
-
+ public GameObject fireball;
     void Start ()
     {
         // Setting up the references.
@@ -31,13 +31,13 @@ public class EnemyAttack : MonoBehaviour
 
     }
 
- public void OnCollisionEnter(Collision collision)
-    {
+//  public void OnCollisionEnter(Collision collision)
+//     {
        
-        Debug.Log("You hit him");
-        TakeDamage(6);
-        //Destroy(gameObject); 
-    }
+//         Debug.Log("You hit him");
+//         TakeDamage(6);
+//         //Destroy(gameObject); 
+//     }
 
 
 
@@ -51,6 +51,16 @@ public class EnemyAttack : MonoBehaviour
            TakeDamage(6);
             Debug.Log("HAH");
         }
+
+        if(other.gameObject == fireball)
+        {
+            // ... the player is in range.
+        
+          Debug.Log("You hit him");
+        TakeDamage(6);
+            
+        }
+
     }
 
 
@@ -67,6 +77,7 @@ public class EnemyAttack : MonoBehaviour
 
     void Update ()
     {
+         fireball = GameObject.FindWithTag("fireball");
         // Add the time since Update was last called to the timer.
         timer += Time.deltaTime;
 
