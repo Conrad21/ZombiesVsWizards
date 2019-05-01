@@ -47,7 +47,7 @@ public class EnemyAttackMaster : MonoBehaviour
     {
        
         Debug.Log("You hit him");
-        TakeDamage(6);
+       // TakeDamage(6);
         //Destroy(gameObject); 
     }
     
@@ -58,6 +58,7 @@ public class EnemyAttackMaster : MonoBehaviour
         {
             // ... the player is in range.
             playerInRange = true;
+             TakeDamage(6);
             Debug.Log("HAH");
            //  TakeDamage(6);
         }
