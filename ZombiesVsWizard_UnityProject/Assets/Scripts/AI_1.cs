@@ -29,10 +29,15 @@ public class AI_1 : MonoBehaviour
         }
     }*/
        public Transform goal;
-       
+    UnityEngine.AI.NavMeshAgent agent;
        void Start () 
        {
-          UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+          agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
           agent.destination = goal.position; 
        }
+
+    void Update()
+    {
+        agent.destination = goal.position;
+    }
 }
