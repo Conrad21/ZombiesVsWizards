@@ -360,8 +360,8 @@ MonoBehaviour:
     Music: https://freesound.org/people/dominictreis/sounds/362281/\r\nPop Sound:
     https://freesound.org/people/deraj/sounds/202230/\r\nRattle Sound: https://freesound.org/people/spookymodem/sounds/202102/\r\nPop
     Sound: https://freesound.org/people/deraj/sounds/202230/\r\nIntro music: https://freesound.org/people/frankum/sounds/353773/\nend
-    credits: \nhttps://www.youtube.com/watch?v=X1U-v-qk9b4\r\n\n\nTHANKS FOR PLAYING!
-    \n\nPress escape to exit!\n"
+    credits: \nhttps://www.youtube.com/watch?v=X1U-v-qk9b4\r\nIn game music:\nhttps://www.youtube.com/watch?v=8vvi4faRB2M\n\nTHANKS
+    FOR PLAYING! \n\nPress escape to exit!\n"
 --- !u!222 &502563107
 CanvasRenderer:
   m_ObjectHideFlags: 0
