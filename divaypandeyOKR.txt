@@ -1,3 +1,2 @@
 Shedule and deliverable:
-Add 2 types of necromancers as charecter objects (Tue by 8pm, 4h)
-Add 2 types of zombies as charecters (Tue by 9pm, 3h)
+Final Testing for pre-demo (recurring up until demo)
