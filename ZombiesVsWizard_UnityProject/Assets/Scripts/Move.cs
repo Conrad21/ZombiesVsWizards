@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 public class Move : MonoBehaviour
 {
-    public float speed = 6.0f;
+    public float speed ;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
     public float rotationSpeed = 40;
@@ -20,10 +20,6 @@ public class Move : MonoBehaviour
     public AudioClip Dripmusic;
     public AudioSource dripSource;
     public int musicSounds = 1;
-    public int musicCount = 1;
-    public AudioClip Mmusic;
-    public AudioSource MSource;
-
 
     public GameObject bullet;
     public GameObject cannon;
@@ -35,9 +31,11 @@ public class Move : MonoBehaviour
         t = GetComponent<Transform>();
         // let the gameObject fall down
         //gameObject.transform.position = new Vector3(14.57, 2.43, 13.47);
+
+        speed = 50.0f;
     }
 
-
+ 
 
     void Update()
     {
@@ -56,9 +54,9 @@ public class Move : MonoBehaviour
             }
         }
         if (Input.GetKey(KeyCode.E))
-            t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
-        else if (Input.GetKey(KeyCode.Q))
-            t.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
+                t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+            else if (Input.GetKey(KeyCode.Q))
+                t.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
 
         // Apply gravity
         moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
@@ -71,28 +69,24 @@ public class Move : MonoBehaviour
             dripSource.PlayOneShot(Dripmusic);
         }
 
-        if (MSource.isPlaying == false && musicSounds == 1)
-        {
-            MSource.PlayOneShot(Mmusic);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {       
             GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
             newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 5;
             newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1000);
         }
 
         if (Input.GetKeyDown(KeyCode.Tab))
-        {
             if (musicSounds == 1)
             {
                 musicSounds = 0;
                 dripSource.Stop();
-                MSource.Stop();
             }
             else { musicSounds = 1; }
-        }
-  
-
     }
+
+    public void speedup(){
+        speed = 75.0f;
+        Debug.Log("SPEED"); 
+    }
+
 }

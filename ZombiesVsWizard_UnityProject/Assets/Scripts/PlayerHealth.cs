@@ -13,7 +13,8 @@ public class PlayerHealth: MonoBehaviour
     bool damaged;       
     public Color flashColour = new Color(5f, 0f, 0f, 0.3f);
     public float flashSpeed = 5f;  
-     public Image DamangedImage; 
+    public Image DamangedImage; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +52,7 @@ public class PlayerHealth: MonoBehaviour
         damaged = true;
         CurrentHealth = (CurrentHealth - damageValue); 
         healthbar.value = CalculateHealth(); 
-    
+
         if(CurrentHealth <= 0){
         Die();
         }
@@ -67,5 +68,11 @@ public class PlayerHealth: MonoBehaviour
         CurrentHealth = 0;
         Debug.Log("You have Dead!"); 
         SceneManager.LoadScene("End Screen");
+    }
+    
+    
+   public void addheal(int n){
+        CurrentHealth = 100; 
+         healthbar.value = CalculateHealth(); 
     }
 }
