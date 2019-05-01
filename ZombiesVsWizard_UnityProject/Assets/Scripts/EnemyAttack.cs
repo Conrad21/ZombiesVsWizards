@@ -31,20 +31,15 @@ public class EnemyAttack : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-       
-        Debug.Log("You hit him");
-        TakeDamage(6);
-        //Destroy(gameObject); 
-    }
+
 
     void OnTriggerEnter (Collider other)
     {
         // If the entering collider is the player...
         if(other.gameObject == player)
         {
-            // ... the player is in range.
+            // ... the player is in range./
+             TakeDamage(6);
             playerInRange = true;
             Debug.Log("HAH");
         }

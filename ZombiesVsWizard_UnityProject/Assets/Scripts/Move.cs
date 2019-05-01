@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 public class Move : MonoBehaviour
 {
-    public float speed = 6.0f;
+    public float speed ;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
     public float rotationSpeed = 40;
@@ -31,6 +31,8 @@ public class Move : MonoBehaviour
         t = GetComponent<Transform>();
         // let the gameObject fall down
         //gameObject.transform.position = new Vector3(14.57, 2.43, 13.47);
+
+        speed = 50.0f;
     }
 
  
@@ -81,4 +83,10 @@ public class Move : MonoBehaviour
             }
             else { musicSounds = 1; }
     }
+
+    public void speedup(){
+        speed = 75.0f;
+        Debug.Log("SPEED"); 
+    }
+
 }
