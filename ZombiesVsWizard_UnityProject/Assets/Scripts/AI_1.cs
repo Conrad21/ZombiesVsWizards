@@ -4,17 +4,40 @@ using UnityEngine;
 
 public class AI_1 : MonoBehaviour
 {
-        public Transform goal;
-        UnityEngine.AI.NavMeshAgent agent;
+    /*public Rigidbody rb;
 
-        void Start () 
-        {
-            agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-            agent.destination = new Vector3(goal.position.x,this.gameObject.transform.position.y,goal.position.z); 
-        }
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
-        void Update()
+    void Update()
+    {
+        float distance;
+        Vector3 forward = transform.TransformDirection(Vector3.forward) * 1000; 
+        
+        if (Physics.Raycast(transform.position, forward, out RaycastHit hit))
         {
-            agent.destination = new Vector3(goal.position.x, this.gameObject.transform.position.y, goal.position.z);//goal.position;
+            if(hit.collider.gameObject.name.Equals("Player"))
+            {
+                distance = hit.distance;
+                
+                float step = 10f * Time.deltaTime; 
+                transform.position = Vector3.MoveTowards(transform.position, hit.collider.gameObject.transform.position, step);
+                //name is hit.collider.gameObject.name
+            }
         }
+    }*/
+       public Transform goal;
+    UnityEngine.AI.NavMeshAgent agent;
+       void Start () 
+       {
+          agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+          agent.destination = goal.position; 
+       }
+
+    void Update()
+    {
+        agent.destination = goal.position;
+    }
 }
