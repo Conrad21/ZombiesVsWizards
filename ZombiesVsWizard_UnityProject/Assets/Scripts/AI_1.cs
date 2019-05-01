@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AI_1 : MonoBehaviour
 {
-        public Transform goal;
+   public Transform goal;
         UnityEngine.AI.NavMeshAgent agent;
 
         void Start () 

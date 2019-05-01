@@ -31,13 +31,13 @@ public class EnemyAttack : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
+    // private void OnCollisionEnter(Collision collision)
+    // {
        
-        Debug.Log("You hit him");
-        TakeDamage(6);
-        //Destroy(gameObject); 
-    }
+    //     Debug.Log("You hit him");
+    //     TakeDamage(6);
+    //     //Destroy(gameObject); 
+    // }
 
     void OnTriggerEnter (Collider other)
     {
