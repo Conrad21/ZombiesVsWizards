@@ -23,10 +23,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 3.2112973
-  m_Height: 10.167682
+  m_Radius: 4.366291
+  m_Height: 23.259243
   m_Direction: 1
-  m_Center: {x: 0.22355594, y: 4.2683487, z: -0.00000031516555}
+  m_Center: {x: -0.057819176, y: 9.610038, z: -0.6138722}
 --- !u!122 &947539722
 Halo:
   m_ObjectHideFlags: 0
@@ -37,7 +37,7 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4281945928
+    rgba: 4282988879
   m_Size: 3
 --- !u!114 &947539719
 MonoBehaviour:

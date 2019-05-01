@@ -19,7 +19,13 @@ public class SCROLL : MonoBehaviour
             Source.PlayOneShot(Sound);
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Debug.Log("inside this place");
+            Application.Quit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
         }
