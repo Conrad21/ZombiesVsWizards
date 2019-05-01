@@ -38,6 +38,12 @@ public class playButton3 : MonoBehaviour
         {
             WhooshSource.PlayOneShot(WhooshSound);
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("rolling credits");
 
+        }
+
+         
     }
 }

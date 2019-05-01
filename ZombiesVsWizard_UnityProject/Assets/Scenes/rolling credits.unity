@@ -112,6 +112,80 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &61600400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61600401}
+  - component: {fileID: 61600403}
+  - component: {fileID: 61600402}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &61600401
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61600400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 103}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 529117846}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -2, y: -2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &61600402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61600400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &61600403
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61600400}
+  m_CullTransparentMesh: 0
 --- !u!1 &346230988
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +279,8 @@ GameObject:
   - component: {fileID: 502563105}
   - component: {fileID: 502563107}
   - component: {fileID: 502563106}
+  - component: {fileID: 502563109}
+  - component: {fileID: 502563108}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -224,12 +300,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 529117846}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -60, y: -100}
+  m_AnchoredPosition: {x: 14.549988, y: -987}
+  m_SizeDelta: {x: -31.1, y: 1517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502563106
 MonoBehaviour:
@@ -244,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -264,12 +340,28 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'THANKS FOR PLAYING!
-
-
-    Creators: Nicole Laczny, Conrad Ptasznik and Divay Pandey
-
-'
+  m_Text: "THANKS FOR WIZARDS VS. ZOMBIES!\n\nCREATORS: \nNicole Laczny, Conrad Ptasznik
+    and Divay Pandey\n\nTHIS IS COURSEWORK DONE IN CS426, THE DEPT. of CS, UNIVERSITY
+    of ILLINOIS at CHICAGO\n\nRESOURSES AND 3D OBJECTS USED:\n\nhttps://docs.unity3d.com/Manual/SL-SurfaceShaders.html\r\nhttps://docs.unity3d.com/Manual/SL-SurfaceShaderExamples.html\r\nhttps://docs.unity3d.com/Manual/SL-SurfaceShaderLightingExamples.html\nhttps://www.youtube.com/watch?v=cj6hwCjiVZE\n\n3D
+    OBJECTS and TEXTURES:\nhttps://www.kisspng.com/png-computer-mouse-computer-icons-scroll-wheel-symbol-744489/download-png.html\r\nhttps://www.kisspng.com/png-computer-keyboard-arrow-keys-wasd-keyboard-paper-c-354066/download-png.html\r\nhttps://www.kisspng.com/png-curved-arrow-tool-2004/\nlizard-
+    https://www.cgtrader.com/items/726395/download-page \r\ncobble stone floors -
+    https://www.artstation.com/artwork/oq6wm\r\nfloor- https://www.textures.com/download/woodplanksold0239/120856\r\nfloor
+    torch - https://www.cgtrader.com/free-3d-models/architectural/lighting/torch-0aaed256-544b-4544-af9f-9815a7c12b91
+    \r\nwall torch - https://www.cgtrader.com/items/746616/download-page \r\nintro
+    image: https://www.wallpaperup.com/604822/WICCA_wiccan_witch_dark_occult_fantasy_religion_book_magic.html\r\norb:
+    https://www.cgtrader.com/items/708879/download-page\r\npaper: https://www.kisspng.com/png-scroll-paper-writer-scroll-702214/download-png.html\r\nbubble:
+    https://www.kisspng.com/png-speech-balloon-clip-art-speech-bubble-794804/download-png.html
+    \nSpider- https://assetstore.unity.com/packages/3d/characters/animals/animated-spider-22986\nMoth-
+    https://assetstore.unity.com/packages/3d/characters/animals/butterfly-animated-58355\nSkeletons-
+    https://assetstore.unity.com/packages/3d/characters/humanoids/skeleton-pbr-animated-low-poly-30659
+    \nTome: https://assetstore.unity.com/packages/3d/props/druid-tome-107953\r \n\nDECORATIONS:\nhttps://www.cgtrader.com/free-3d-models/plant/other/crystal-1\r\nhttps://www.cgtrader.com/free-3d-models/military/melee/crystal-sword\r\nhttps://www.cgtrader.com/items/990356/download-page\r\nhttps://www.cgtrader.com/items/990358/download-page\r\nhttps://www.cgtrader.com/free-3d-models/science/laboratory/low-poly-pbr-flask\r\nhttps://www.cgtrader.com/free-3d-models/science/laboratory/low-poly-pbr-bottle\r\nhttps://www.cgtrader.com/free-3d-models/household/kitchenware/mortar-pestle\r\nhttps://www.cgtrader.com/items/1847593/download-page\r\nhttps://www.cgtrader.com/items/933212/download-page\r\nhttps://www.cgtrader.com/items/72775/download-page\r\nhttps://www.cgtrader.com/items/669212/download-page\r\nhttps://www.cgtrader.com/items/836752/download-page\r\nhttps://www.cgtrader.com/items/1004509/download-page\r\nhttps://www.cgtrader.com/items/1930108/download-page\r\nhttps://www.cgtrader.com/free-3d-models/architectural/decoration/glass-vases-set\r\nhttps://www.cgtrader.com/free-3d-models/science/medical/flask-2bc26277-1b0b-41c4-ba31-2e9883eb5f47\r\nhttps://www.cgtrader.com/free-3d-models/furniture/table/worn-d4118b93-fe82-4d9d-be5d-6c09288187bd\r\nhttps://www.cgtrader.com/free-3d-models/military/melee/wooden-club\r\nhttps://www.cgtrader.com/free-3d-models/various/various-models/wooden-barrel-24ae79fe-45c0-43a9-925b-00d56f1be6b8\r\nhttps://www.cgtrader.com/free-3d-models/exterior/other/old-medieval-barrel-game-ready-3d-model\r\nhttps://www.cgtrader.com/items/167896/download-page\r\nhttps://www.cgtrader.com/free-3d-models/furniture/table/decorated-wooden-dable\r\nhttps://www.cgtrader.com/items/992680/download-page\r\nhttps://www.cgtrader.com/items/1897988/download-page\r\nhttps://www.cgtrader.com/items/1914988/download-page\r\nhttps://www.cgtrader.com/items/761223/download-page\r\nhttps://www.cgtrader.com/free-3d-models/various/various-models/book-pack\r\nhttps://www.cgtrader.com/free-3d-models/interior/house/tableolddesk\r\nhttps://www.turbosquid.com/3d-models/free-obj-model-witch-cauldron/1087374\r\nhttps://www.freepik.com/free-photo/wooden-plank-textured-background-material_3075248.htm\r\nhttps://www.cgtrader.com/free-3d-models/exterior/landmark/celtic-runes-15bc00cba26c50a872b96ffc06f4d5f8\r\nhttps://www.cgtrader.com/items/194171/download-page\r\nhttps://www.cgtrader.com/free-3d-models/furniture/other/book-shelf-589b04b7-7292-4adc-841e-30ae75282b3f\r\nhttps://www.cgtrader.com/items/793845/download-page\r\nhttps://www.cgtrader.com/free-3d-models/military/other/dungeon-traps\r\nhttps://www.cgtrader.com/free-3d-models/exterior/sci-fi/low-poly-pillar\n\n\nSOUNDS:\nZombie:
+    https://freesound.org/people/Breviceps/sounds/445983/ \r\nFire: https://freesound.org/people/Yggdrasil_Vanaheim/sounds/402723/
+    \r\nDrips: dripping water: https://www.youtube.com/watch?v=cyQos90QNCU \nEnd screen
+    Music: https://freesound.org/people/dominictreis/sounds/362281/\r\nPop Sound:
+    https://freesound.org/people/deraj/sounds/202230/\r\nRattle Sound: https://freesound.org/people/spookymodem/sounds/202102/\r\nPop
+    Sound: https://freesound.org/people/deraj/sounds/202230/\r\nIntro music: https://freesound.org/people/frankum/sounds/353773/\nend
+    credits: \nhttps://www.youtube.com/watch?v=X1U-v-qk9b4\r\n\n\nTHANKS FOR PLAYING!
+    \n\nPress escape to exit!\n"
 --- !u!222 &502563107
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -278,6 +370,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502563104}
   m_CullTransparentMesh: 0
+--- !u!111 &502563108
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502563104}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 6789d316a6ea9c743955c12b2b3a37dc, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &502563109
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502563104}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d007a2b051066d44c90c3c4d48dc8112, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &529117842
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,6 +416,7 @@ GameObject:
   - component: {fileID: 529117845}
   - component: {fileID: 529117844}
   - component: {fileID: 529117843}
+  - component: {fileID: 529117847}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -368,10 +495,123 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 61600401}
   - {fileID: 1903589011}
   - {fileID: 502563105}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &529117847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529117842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beddc829801882f44a1b3e06c36e36ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sound: {fileID: 8300000, guid: 373927923fbda1a4ea6d37cc13ea0f56, type: 3}
+  Source: {fileID: 1999684636}
+--- !u!1 &719734113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 719734117}
+  - component: {fileID: 719734116}
+  - component: {fileID: 719734115}
+  - component: {fileID: 719734114}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &719734114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719734113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &719734115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719734113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &719734116
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719734113}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &719734117
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719734113}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -539,11 +779,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903589010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 529117846}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -585,3 +825,130 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903589010}
   m_CullTransparentMesh: 0
+--- !u!1 &1999684635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1999684637}
+  - component: {fileID: 1999684636}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1999684636
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999684635}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 373927923fbda1a4ea6d37cc13ea0f56, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1999684637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999684635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 174.55, y: 784, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
