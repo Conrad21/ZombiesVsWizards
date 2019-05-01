@@ -10,7 +10,7 @@ public class EnemyAttack : MonoBehaviour
     public float MaxHealth;
     bool isDead;                                             
     bool damaged;    
-
+     public int tacs; 
     public GameObject player ;                          // Reference to the player GameObject.
     PlayerHealth playerHealth;                  // Reference to the player's health.
    // EnemyHealth enemyHealth;                    // Reference to this enemy's health.
@@ -31,13 +31,15 @@ public class EnemyAttack : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+ public void OnCollisionEnter(Collision collision)
     {
        
         Debug.Log("You hit him");
         TakeDamage(6);
         //Destroy(gameObject); 
     }
+
+
 
     void OnTriggerEnter (Collider other)
     {
@@ -46,6 +48,7 @@ public class EnemyAttack : MonoBehaviour
         {
             // ... the player is in range.
             playerInRange = true;
+           TakeDamage(6);
             Debug.Log("HAH");
         }
     }
@@ -83,7 +86,7 @@ public class EnemyAttack : MonoBehaviour
     {
         // Reset the timer.
         timer = 0f;
-
+ 
         // If the player has health to lose...
         if(playerHealth.CurrentHealth > 0)
         {
@@ -100,10 +103,10 @@ public void TakeDamage(float damageValue){
         }
     }
 
-    void Die(){
-        CurrentHealth = 0;
+   private void Die(){
+      
         Debug.Log("He Dead!"); 
-        Destroy(gameObject); 
+        Destroy(this.gameObject); 
     }
   
 
