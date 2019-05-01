@@ -10,14 +10,14 @@ public class EnemyAttack : MonoBehaviour
     public float MaxHealth;
     bool isDead;                                             
     bool damaged;    
-
+     public int tacs; 
     public GameObject player ;                          // Reference to the player GameObject.
     PlayerHealth playerHealth;                  // Reference to the player's health.
    // EnemyHealth enemyHealth;                    // Reference to this enemy's health.
     bool playerInRange;                         // Whether player is within the trigger collider and can be attacked.
     float timer;                                // Timer for counting up to the next attack.
 
-
+ public GameObject fireball;
     void Start ()
     {
         // Setting up the references.
@@ -31,13 +31,15 @@ public class EnemyAttack : MonoBehaviour
 
     }
 
-    // private void OnCollisionEnter(Collision collision)
-    // {
+//  public void OnCollisionEnter(Collision collision)
+//     {
        
-    //     Debug.Log("You hit him");
-    //     TakeDamage(6);
-    //     //Destroy(gameObject); 
-    // }
+//         Debug.Log("You hit him");
+//         TakeDamage(6);
+//         //Destroy(gameObject); 
+//     }
+
+
 
     void OnTriggerEnter (Collider other)
     {
@@ -46,8 +48,19 @@ public class EnemyAttack : MonoBehaviour
         {
             // ... the player is in range.
             playerInRange = true;
+           TakeDamage(6);
             Debug.Log("HAH");
         }
+
+        if(other.gameObject == fireball)
+        {
+            // ... the player is in range.
+        
+          Debug.Log("You hit him");
+        TakeDamage(6);
+            
+        }
+
     }
 
 
@@ -64,6 +77,7 @@ public class EnemyAttack : MonoBehaviour
 
     void Update ()
     {
+         fireball = GameObject.FindWithTag("fireball");
         // Add the time since Update was last called to the timer.
         timer += Time.deltaTime;
 
@@ -83,7 +97,7 @@ public class EnemyAttack : MonoBehaviour
     {
         // Reset the timer.
         timer = 0f;
-
+ 
         // If the player has health to lose...
         if(playerHealth.CurrentHealth > 0)
         {
@@ -100,10 +114,10 @@ public void TakeDamage(float damageValue){
         }
     }
 
-    void Die(){
-        CurrentHealth = 0;
+   private void Die(){
+      
         Debug.Log("He Dead!"); 
-        Destroy(gameObject); 
+        Destroy(this.gameObject); 
     }
   
 

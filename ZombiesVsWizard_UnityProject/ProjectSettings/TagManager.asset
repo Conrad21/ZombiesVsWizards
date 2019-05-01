@@ -11,6 +11,7 @@ TagManager:
   - fire
   - MyPlayer
   - necro
+  - fireball
   layers:
   - Default
   - TransparentFX
