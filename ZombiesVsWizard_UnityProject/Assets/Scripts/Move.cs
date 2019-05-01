@@ -20,6 +20,10 @@ public class Move : MonoBehaviour
     public AudioClip Dripmusic;
     public AudioSource dripSource;
     public int musicSounds = 1;
+    public int musicCount = 1;
+    public AudioClip Mmusic;
+    public AudioSource MSource;
+
 
     public GameObject bullet;
     public GameObject cannon;
@@ -33,7 +37,7 @@ public class Move : MonoBehaviour
         //gameObject.transform.position = new Vector3(14.57, 2.43, 13.47);
     }
 
- 
+
 
     void Update()
     {
@@ -52,9 +56,9 @@ public class Move : MonoBehaviour
             }
         }
         if (Input.GetKey(KeyCode.E))
-                t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
-            else if (Input.GetKey(KeyCode.Q))
-                t.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
+            t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+        else if (Input.GetKey(KeyCode.Q))
+            t.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
 
         // Apply gravity
         moveDirection.y = moveDirection.y - (gravity * Time.deltaTime);
@@ -65,20 +69,26 @@ public class Move : MonoBehaviour
         if (dripSource.isPlaying == false && musicSounds == 1)
         {
             dripSource.PlayOneShot(Dripmusic);
+            MSource.PlayOneShot(Mmusic);
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {       
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {
             GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
             newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 5;
             newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1000);
         }
 
         if (Input.GetKeyDown(KeyCode.Tab))
+        {
             if (musicSounds == 1)
             {
                 musicSounds = 0;
                 dripSource.Stop();
+                MSource.Stop();
             }
             else { musicSounds = 1; }
+        }
+  
+
     }
 }

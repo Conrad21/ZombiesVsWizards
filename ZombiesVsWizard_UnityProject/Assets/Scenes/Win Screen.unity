@@ -372,7 +372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -12.8, y: -127}
+  m_AnchoredPosition: {x: -12.799988, y: -127}
   m_SizeDelta: {x: -526.3, y: -674.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1207563730
@@ -846,7 +846,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1365479746}
   - component: {fileID: 1365479748}
-  - component: {fileID: 1365479749}
   - component: {fileID: 1365479747}
   - component: {fileID: 1365479750}
   m_Layer: 5
@@ -913,22 +912,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365479745}
   m_CullTransparentMesh: 0
---- !u!114 &1365479749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365479745}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cf09cd5731ea3f4ca907e49d449d774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Sound: {fileID: 8300000, guid: 04ed5bbc12c98ed499fd87be7e38ed40, type: 3}
-  Source: {fileID: 623444973}
-  WhooshSound: {fileID: 8300000, guid: 3be0ff9cb419441e490a3a508f905c4b, type: 3}
-  WhooshSource: {fileID: 1259948379}
 --- !u!114 &1365479750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,7 +1100,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1365479749}
+      - m_Target: {fileID: 0}
         m_MethodName: ButtonPress
         m_Mode: 1
         m_Arguments:
