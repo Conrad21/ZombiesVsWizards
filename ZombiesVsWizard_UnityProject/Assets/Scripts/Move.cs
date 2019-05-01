@@ -69,6 +69,10 @@ public class Move : MonoBehaviour
         if (dripSource.isPlaying == false && musicSounds == 1)
         {
             dripSource.PlayOneShot(Dripmusic);
+        }
+
+        if (MSource.isPlaying == false && musicSounds == 1)
+        {
             MSource.PlayOneShot(Mmusic);
         }
 
