@@ -10,6 +10,7 @@ TagManager:
   - Head
   - fire
   - MyPlayer
+  - necro
   layers:
   - Default
   - TransparentFX
