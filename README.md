@@ -1,5 +1,7 @@
 # ZombiesVsWizards
-ZombiesVsWizards
+ZombiesVsWizards- a self chosen and created game 
+
+youtude link: https://www.youtube.com/watch?v=6xCyNlZFWiI&t=3s
 
 3d objects
 lizard- https://www.cgtrader.com/items/726395/download-page 
