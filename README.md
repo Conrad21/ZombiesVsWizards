@@ -1,5 +1,5 @@
 # ZombiesVsWizards
-ZombiesVsWizards- a self chosen and created game 
+ZombiesVsWizards- a group chosen and created game 
 
 youtude link: https://www.youtube.com/watch?v=6xCyNlZFWiI&t=3s
 
